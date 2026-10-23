@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo - Estetica Colfelice</title>
+    <meta name="description" content="Scopri la storia di Estetica Colfelice, centro estetico a Roma zona Colli Albani. 15+ anni di esperienza, passione e professionalità in Via Colfelice 20.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://esteticacolfeliceroma.it/chi-siamo.html">
+    <meta property="og:title" content="Chi Siamo - Estetica Colfelice Roma">
+    <meta property="og:description" content="Scopri la storia di Estetica Colfelice, centro estetico a Roma zona Colli Albani.">
+    <meta property="og:url" content="https://esteticacolfeliceroma.it/chi-siamo.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #8AC6D0;
+            --primary-light: #DFF7F4;
+            --accent: #26A69A;
+            --text: #727475;
+            --text-dark: #4a4a4a;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lato', sans-serif; color: var(--text); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--text-dark); }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { position: fixed; top: 0; left: 0; right: 0; background: var(--white); z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; color: var(--accent); letter-spacing: 2px; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { height: 45px; width: 45px; }
+        .logo-img { height: 65px; width: auto; }
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--text); transition: color 0.3s; position: relative; }
+        .nav-links a:hover { color: var(--accent); }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { background: var(--accent); color: var(--white) !important; padding: 12px 25px; border-radius: 30px; transition: all 0.3s; }
+        .nav-cta:hover { background: var(--primary); transform: translateY(-2px); }
+        .nav-cta::after { display: none !important; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .menu-toggle span { width: 25px; height: 3px; background: var(--text); transition: 0.3s; }
+
+        .page-hero { margin-top: 75px; padding: 80px 0 60px; background: linear-gradient(to bottom, #8AC6D0 0%, var(--primary-light) 100%); text-align: center; }
+        .page-hero h1 { font-size: 48px; margin-bottom: 15px; }
+        .page-hero p { font-size: 18px; max-width: 700px; margin: 0 auto; color: var(--text); }
+        .page-hero .breadcrumb { margin-top: 20px; font-size: 14px; color: var(--text); }
+        .page-hero .breadcrumb a { color: var(--accent); }
+
+        .about-section { padding: 80px 0; background: var(--white); }
+        .about-block { margin-bottom: 50px; }
+        .about-block h2 { font-size: 30px; margin-bottom: 20px; color: var(--accent); }
+        .about-block p { font-size: 16px; line-height: 1.8; color: var(--text); margin-bottom: 15px; }
+
+        .photos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 40px 0; }
+        .photos-grid img { width: 100%; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); transition: transform 0.3s; aspect-ratio: 3/4; object-fit: cover; }
+        .photos-grid img:hover { transform: scale(1.02); }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .stat-card { text-align: center; padding: 40px 20px; background: var(--primary-light); border-radius: 15px; transition: transform 0.3s; }
+        .stat-card:hover { transform: translateY(-5px); }
+        .stat-card .stat-number { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--accent); }
+        .stat-card .stat-label { font-size: 16px; color: var(--text); margin-top: 10px; }
+
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .value-card { padding: 30px; background: var(--white); border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.06); text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+        .value-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(138, 198, 208, 0.25); }
+        .value-card i { font-size: 40px; color: var(--accent); margin-bottom: 20px; }
+        .value-card h3 { font-size: 20px; margin-bottom: 10px; }
+        .value-card p { font-size: 15px; line-height: 1.7; }
+
+        .cta-section { padding: 80px 0; background: linear-gradient(to bottom, var(--white) 0%, #8AC6D0 100%); text-align: center; }
+        .cta-section h2 { font-size: 36px; margin-bottom: 20px; }
+        .cta-section p { font-size: 18px; margin-bottom: 30px; color: var(--text); }
+        .btn-primary { display: inline-block; background: var(--accent); color: var(--white); padding: 16px 40px; border-radius: 30px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; transition: all 0.3s; }
+        .btn-primary:hover { background: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(138, 198, 208, 0.4); }
+
+        footer { background: #2a2a2a; color: var(--white); padding: 50px 0 30px; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; opacity: 0.7; }
+        .footer-bottom a { color: var(--primary); }
+
+        .contact-float-btn { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 28px; box-shadow: 0 5px 25px rgba(37,211,102,0.4); z-index: 999; transition: all 0.3s; }
+        .contact-float-btn:hover { transform: scale(1.1); background: #128C7E; }
+
+        @media (max-width: 768px) {
+            nav { padding: 12px 20px; }
+            .logo { font-size: 24px; flex: 1; justify-content: center; }
+            .logo-icon { height: 35px; width: 35px; }
+            .logo-img { height: 52px; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 30px; gap: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: flex; }
+            .menu-toggle span { background: var(--accent); }
+            .page-hero { margin-top: 60px; padding: 50px 0 40px; }
+            .page-hero h1 { font-size: 32px; }
+            .stats-grid { grid-template-columns: 1fr; gap: 20px; }
+            .values-grid { grid-template-columns: 1fr; gap: 20px; }
+            .photos-grid { grid-template-columns: 1fr; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./" class="logo"><img src="favicon.svg" alt="Estetica Colfelice" class="logo-icon"><img src="logo.svg" alt="Estetica Colfelice" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="./#services">Trattamenti</a></li>
+                <li><a href="./prodotti.html">Prodotti</a></li>
+                <li><a href="./contatti.html">Contatti</a></li>
+                <li><a href="./#form-section" class="nav-cta">Prenota Ora</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Chi Siamo</h1>
+            <p>L'eccellenza dell'estetica avanzata, il calore di un momento tutto per te.</p>
+            <div class="breadcrumb"><a href="./">Home</a> / Chi Siamo</div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+
+            <div class="about-block">
+                <h2>L'essenza di Estetica Colfelice</h2>
+                <p>Benvenuti nel nostro spazio. Il centro nasce da un'idea semplice: unire l'efficacia delle tecnologie più innovative al calore di un momento dedicato interamente a te. Sappiamo che la cura del corpo non è solo estetica, ma un modo per stare bene con se stesse: per questo lavoriamo ogni giorno con passione, gioia e un'attenzione assoluta alla pulizia e alla sicurezza.</p>
+            </div>
+
+            <div class="photos-grid">
+                <img src="FotoMarianna/marianna-2.jpg" alt="Marianna - Estetica Colfelice">
+                <img src="FotoMarianna/marianna-1.jpg" alt="Marianna - Estetica Colfelice">
+            </div>
+
+            <div class="about-block">
+                <h2>Perché scegliere il nostro centro in via Colfelice?</h2>
+                <p>Qui nel cuore della zona Colli Albani a Roma non troverai trattamenti standard. Crediamo che ogni persona sia unica, ed è per questo che la nostra consulenza personalizzata è il punto di partenza di ogni percorso: studiamo insieme a te ciò di cui la tua pelle e il tuo corpo hanno davvero bisogno.</p>
+                <p>Che tu stia cercando una soluzione definitiva per l'epilazione con il laser, un ciclo di onda d'urto o un percorso di pressoterapia per rimodellare la silhouette, o la precisione dei tatuaggi permanenti per valorizzare il viso, ogni servizio è pensato per te.</p>
+            </div>
+
+            <div class="about-block">
+                <h2>La Nostra Filosofia</h2>
+                <p>Ci piace studiare e non smettiamo mai di farlo: partecipiamo costantemente a corsi di aggiornamento e master specialistici per portarti solo le tecniche più moderne e i prodotti più sicuri. Scegliere Estetica Colfelice significa affidarsi a mani esperte che amano ciò che fanno e che hanno un unico obiettivo: regalarti un piccolo momento di relax e farti uscire con il sorriso, sicura della tua bellezza naturale.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anni di Esperienza</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Clienti Soddisfatti</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Trattamenti Disponibili</div>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passione</h3>
+                    <p>Ogni trattamento è eseguito con dedizione e amore per il nostro lavoro.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sicurezza</h3>
+                    <p>Utilizziamo solo prodotti certificati e tecnologie all'avanguardia.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Personalizzazione</h3>
+                    <p>Ogni percorso è studiato su misura per le tue esigenze specifiche.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Vieni a Trovarci</h2>
+            <p>Prenota una consulenza gratuita e scopri il percorso perfetto per te</p>
+            <a href="./#form-section" class="btn-primary">Prenota Ora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Estetica Colfelice. Tutti i diritti riservati. | <a href="./privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+<a href="https://wa.me/393485505465?text=Ciao%20Marianna%2C%20ho%20trovato%20sul%20sito%20il%20tuo%20numero%2C%20volevo%20chiederti%20informazioni" target="_blank" class="contact-float-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="cookie-banner.js"></script>
+</body>
+</html>

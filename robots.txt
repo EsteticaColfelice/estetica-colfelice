@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Logo/
+
+Sitemap: https://esteticacolfeliceroma.it/sitemap.xml

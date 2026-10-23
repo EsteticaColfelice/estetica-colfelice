@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massaggi & Benessere - Estetica Colfelice</title>
+    <meta name="description" content="Massaggi viso e corpo a Roma zona Colli Albani. Relax e benessere professionale. Estetica Colfelice, Via Colfelice 20.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://esteticacolfeliceroma.it/massaggi.html">
+    <meta property="og:title" content="Massaggi & Benessere - Estetica Colfelice Roma">
+    <meta property="og:description" content="Massaggi viso e corpo professionali a Roma zona Colli Albani.">
+    <meta property="og:url" content="https://esteticacolfeliceroma.it/massaggi.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Service","name":"Massaggi & Benessere","provider":{"@type":"BeautySalon","name":"Estetica Colfelice","address":{"@type":"PostalAddress","streetAddress":"Via Colfelice 20","addressLocality":"Roma","addressCountry":"IT"}},"description":"Massaggi viso e corpo professionali per relax e benessere.","areaServed":"Roma"}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #8AC6D0;
+            --primary-light: #DFF7F4;
+            --accent: #26A69A;
+            --text: #727475;
+            --text-dark: #4a4a4a;
+            --white: #ffffff;
+        }
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lato', sans-serif; color: var(--text); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--text-dark); }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { position: fixed; top: 0; left: 0; right: 0; background: var(--white); z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; color: var(--accent); letter-spacing: 2px; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { height: 45px; width: 45px; }
+        .logo-img { height: 65px; width: auto; }
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--text); transition: color 0.3s; position: relative; }
+        .nav-links a:hover { color: var(--accent); }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { background: var(--accent); color: var(--white) !important; padding: 12px 25px; border-radius: 30px; transition: all 0.3s; }
+        .nav-cta:hover { background: var(--primary); transform: translateY(-2px); }
+        .nav-cta::after { display: none !important; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .menu-toggle span { width: 25px; height: 3px; background: var(--text); transition: 0.3s; }
+
+        .page-hero { margin-top: 75px; padding: 80px 0 60px; background: linear-gradient(to bottom, #8AC6D0 0%, var(--primary-light) 100%); text-align: center; }
+        .page-hero h1 { font-size: 48px; margin-bottom: 15px; }
+        .page-hero p { font-size: 18px; max-width: 700px; margin: 0 auto; color: var(--text); }
+        .page-hero .breadcrumb { margin-top: 20px; font-size: 14px; color: var(--text); }
+        .page-hero .breadcrumb a { color: var(--accent); }
+
+        .treatments-section { padding: 80px 0; background: var(--white); }
+        .treatment-block { margin-bottom: 50px; background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 30px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; scroll-margin-top: 100px; }
+        .treatment-block:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(138, 198, 208, 0.25); }
+        .treatment-block:last-child { margin-bottom: 0; }
+        .treatment-header { background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); padding: 25px 35px; display: flex; align-items: center; gap: 15px; }
+        .treatment-header i { font-size: 28px; color: var(--white); }
+        .treatment-header h2 { font-size: 26px; color: var(--white); margin: 0; }
+        .treatment-body { padding: 35px; }
+        .treatment-body p { font-size: 16px; line-height: 1.8; color: var(--text); }
+
+        .cta-section { padding: 80px 0; background: linear-gradient(to bottom, var(--white) 0%, #8AC6D0 100%); text-align: center; }
+        .cta-section h2 { font-size: 36px; margin-bottom: 20px; }
+        .cta-section p { font-size: 18px; margin-bottom: 30px; color: var(--text); }
+        .btn-primary { display: inline-block; background: var(--accent); color: var(--white); padding: 16px 40px; border-radius: 30px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; transition: all 0.3s; }
+        .btn-primary:hover { background: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(138, 198, 208, 0.4); }
+
+        footer { background: #2a2a2a; color: var(--white); padding: 50px 0 30px; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; opacity: 0.7; }
+        .footer-bottom a { color: var(--primary); }
+
+        .contact-float-btn { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 28px; box-shadow: 0 5px 25px rgba(37,211,102,0.4); z-index: 999; transition: all 0.3s; }
+        .contact-float-btn:hover { transform: scale(1.1); background: #128C7E; }
+
+        @media (max-width: 768px) {
+            nav { padding: 12px 20px; }
+            .logo { font-size: 24px; flex: 1; justify-content: center; }
+            .logo-icon { height: 35px; width: 35px; }
+            .logo-img { height: 52px; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 30px; gap: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: flex; }
+            .menu-toggle span { background: var(--accent); }
+            .page-hero { margin-top: 60px; padding: 50px 0 40px; }
+            .page-hero h1 { font-size: 32px; }
+            .treatment-header h2 { font-size: 20px; }
+            .treatment-body { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./" class="logo"><img src="favicon.svg" alt="Estetica Colfelice" class="logo-icon"><img src="logo.svg" alt="Estetica Colfelice" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="./#services">Trattamenti</a></li>
+                <li><a href="./prodotti.html">Prodotti</a></li>
+                <li><a href="./contatti.html">Contatti</a></li>
+                <li><a href="./#form-section" class="nav-cta">Prenota Ora</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Massaggi & Benessere</h1>
+            <p>L'arte del massaggio manuale: un percorso personalizzato per il riequilibrio profondo del corpo e della mente.</p>
+            <div class="breadcrumb"><a href="./">Home</a> / Massaggi & Benessere</div>
+        </div>
+    </section>
+
+    <section class="treatments-section">
+        <div class="container">
+
+            <div class="treatment-block" id="massaggi-viso-corpo">
+                <div class="treatment-header">
+                    <i class="fas fa-hands"></i>
+                    <h2>Massaggi Viso e Corpo</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>Da Estetica Colfelice, il massaggio è il momento in cui la tecnologia lascia spazio alla sensibilità delle mani. Non crediamo nei protocolli standard: ogni seduta è un percorso personalizzato che fonde diverse tecniche per rispondere esattamente a ciò di cui il tuo corpo ha bisogno. Che si tratti di un massaggio drenante per dare sollievo immediato alle gambe gonfie, di un decontratturante per sciogliere le tensioni muscolari o di un trattamento modellante per potenziare i risultati delle tecnologie, il nostro obiettivo è il riequilibrio profondo dei tessuti.</p>
+                    <br>
+                    <p>Il massaggio nel nostro studio di via Colfelice è un'esperienza sensoriale completa. In un ambiente silenzioso e protetto, lavoriamo per migliorare il microcircolo, ossigenare la pelle e regalarti una profonda sensazione di leggerezza che dura nel tempo. Durante la consulenza iniziale, definiamo insieme l'approccio più efficace, trasformando ogni seduta in un investimento per la tua salute e il tuo benessere psicofisico. Affidarsi alle nostre mani significa scegliere una cura artigianale, supportata da una profonda conoscenza dell'anatomia e dei ritmi del corpo.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Concediti un Momento di Relax</h2>
+            <p>Prenota il tuo massaggio personalizzato</p>
+            <a href="./#form-section" class="btn-primary">Prenota Ora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Estetica Colfelice. Tutti i diritti riservati. | <a href="./privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+<a href="https://wa.me/393485505465?text=Ciao%20Marianna%2C%20ho%20trovato%20sul%20sito%20il%20tuo%20numero%2C%20volevo%20chiederti%20informazioni" target="_blank" class="contact-float-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="cookie-banner.js"></script>
+</body>
+</html>

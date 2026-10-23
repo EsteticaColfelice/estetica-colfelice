@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetica Avanzata & Tecnologie - Estetica Colfelice</title>
+    <meta name="description" content="Estetica avanzata a Roma: LPG, radiofrequenza, pressoterapia, onda d'urto, lipolaser, microneedling. Centro Estetica Colfelice, Colli Albani.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://esteticacolfeliceroma.it/estetica-avanzata.html">
+    <meta property="og:title" content="Estetica Avanzata - Estetica Colfelice Roma">
+    <meta property="og:description" content="LPG, radiofrequenza, pressoterapia, onda d'urto, lipolaser, microneedling a Roma.">
+    <meta property="og:url" content="https://esteticacolfeliceroma.it/estetica-avanzata.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Service","name":"Estetica Avanzata & Tecnologie","provider":{"@type":"BeautySalon","name":"Estetica Colfelice","address":{"@type":"PostalAddress","streetAddress":"Via Colfelice 20","addressLocality":"Roma","addressCountry":"IT"}},"description":"LPG, radiofrequenza, pressoterapia, onda d'urto, lipolaser e microneedling professionale.","areaServed":"Roma"}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #8AC6D0;
+            --primary-light: #DFF7F4;
+            --primary-medium: #CBEDEF;
+            --accent: #26A69A;
+            --text: #727475;
+            --text-dark: #4a4a4a;
+            --white: #ffffff;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--white); z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 40px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px; font-weight: 600;
+            color: var(--accent); letter-spacing: 2px;
+        }
+
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { height: 45px; width: 45px; }
+        .logo-img { height: 65px; width: auto; }
+
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+
+        .nav-links a {
+            font-size: 14px; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 1px;
+            color: var(--text); transition: color 0.3s; position: relative;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0;
+            width: 0; height: 2px; background: var(--accent); transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-cta {
+            background: var(--accent); color: var(--white) !important;
+            padding: 12px 25px; border-radius: 30px; transition: all 0.3s;
+        }
+        .nav-cta:hover { background: var(--primary); transform: translateY(-2px); }
+        .nav-cta::after { display: none !important; }
+
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .menu-toggle span { width: 25px; height: 3px; background: var(--text); transition: 0.3s; }
+
+        .page-hero {
+            margin-top: 75px; padding: 80px 0 60px;
+            background: linear-gradient(to bottom, #8AC6D0 0%, var(--primary-light) 100%);
+            text-align: center;
+        }
+
+        .page-hero h1 { font-size: 48px; margin-bottom: 15px; }
+        .page-hero p { font-size: 18px; max-width: 700px; margin: 0 auto; color: var(--text); }
+        .page-hero .breadcrumb { margin-top: 20px; font-size: 14px; color: var(--text); }
+        .page-hero .breadcrumb a { color: var(--accent); }
+
+        .treatments-section { padding: 80px 0; background: var(--white); }
+
+        .treatment-block {
+            margin-bottom: 50px; background: var(--white);
+            border-radius: 15px; overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            scroll-margin-top: 100px;
+        }
+        .treatment-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(138, 198, 208, 0.25);
+        }
+        .treatment-block:last-child { margin-bottom: 0; }
+
+        .treatment-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            padding: 25px 35px; display: flex; align-items: center; gap: 15px;
+        }
+        .treatment-header i { font-size: 28px; color: var(--white); }
+        .treatment-header h2 { font-size: 26px; color: var(--white); margin: 0; }
+
+        .treatment-body { padding: 35px; }
+        .treatment-body p { font-size: 16px; line-height: 1.8; color: var(--text); }
+
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, var(--white) 0%, #8AC6D0 100%);
+            text-align: center;
+        }
+        .cta-section h2 { font-size: 36px; margin-bottom: 20px; }
+        .cta-section p { font-size: 18px; margin-bottom: 30px; color: var(--text); }
+
+        .btn-primary {
+            display: inline-block; background: var(--accent); color: var(--white);
+            padding: 16px 40px; border-radius: 30px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
+            transition: all 0.3s;
+        }
+        .btn-primary:hover {
+            background: var(--primary); transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(138, 198, 208, 0.4);
+        }
+
+        footer { background: #2a2a2a; color: var(--white); padding: 50px 0 30px; }
+        .footer-bottom {
+            text-align: center; padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px; opacity: 0.7;
+        }
+        .footer-bottom a { color: var(--primary); }
+
+        .contact-float-btn { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 28px; box-shadow: 0 5px 25px rgba(37,211,102,0.4); z-index: 999; transition: all 0.3s; }
+        .contact-float-btn:hover { transform: scale(1.1); background: #128C7E; }
+
+        @media (max-width: 768px) {
+            nav { padding: 12px 20px; }
+            .logo { font-size: 24px; flex: 1; justify-content: center; }
+            .logo-icon { height: 35px; width: 35px; }
+            .logo-img { height: 52px; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--white); flex-direction: column;
+                padding: 30px; gap: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: flex; }
+            .menu-toggle span { background: var(--accent); }
+            .page-hero { margin-top: 60px; padding: 50px 0 40px; }
+            .page-hero h1 { font-size: 32px; }
+            .treatment-header h2 { font-size: 20px; }
+            .treatment-body { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./" class="logo"><img src="favicon.svg" alt="Estetica Colfelice" class="logo-icon"><img src="logo.svg" alt="Estetica Colfelice" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="./#services">Trattamenti</a></li>
+                <li><a href="./prodotti.html">Prodotti</a></li>
+                <li><a href="./contatti.html">Contatti</a></li>
+                <li><a href="./#form-section" class="nav-cta">Prenota Ora</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Estetica Avanzata & Tecnologie</h1>
+            <p>Dalla dermopigmentazione alle tecnologie d'avanguardia, il tuo spazio di rigenerazione a Roma Colli Albani.</p>
+            <div class="breadcrumb"><a href="./">Home</a> / Estetica Avanzata & Tecnologie</div>
+        </div>
+    </section>
+
+    <section class="treatments-section">
+        <div class="container">
+
+            <div class="treatment-block" id="lpg">
+                <div class="treatment-header">
+                    <i class="fas fa-wave-square"></i>
+                    <h2>LPG</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>Considerato il leader mondiale nel rimodellamento del corpo, l'LPG è una tecnologia brevettata che agisce attraverso una stimolazione meccanica profonda ma totalmente non invasiva. È straordinario per levigare la cellulite, drenare i liquidi e rassodare la pelle, riattivando il metabolismo cellulare in modo naturale. Per vedere la tua silhouette trasformarsi e consolidare i risultati, il percorso ideale prevede solitamente un ciclo di circa 10-12 sedute. Per garantirti la massima efficacia, noi di Estetica Colfelice iniziamo sempre con una consulenza personalizzata: un momento tutto per te in cui studieremo i tuoi obiettivi e creeremo il protocollo perfetto. Sceglierci significa affidarsi a un punto di riferimento in zona per le tecnologie originali LPG, utilizzate con l'esperienza necessaria per farti sentire di nuovo splendida nel tuo corpo.</p>
+                </div>
+            </div>
+
+            <div class="treatment-block" id="radiofrequenza">
+                <div class="treatment-header">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h2>Radiofrequenza</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>La radiofrequenza è il trattamento d'eccellenza per chi cerca un effetto lifting e una pelle subito più compatta senza ricorrere alla chirurgia. Attraverso onde elettromagnetiche che generano calore nel derma, stimoliamo la produzione di nuovo collagene ed elastina, rimpolpando i tessuti di viso e corpo. I primi risultati di freschezza sono visibili già dopo la prima seduta, mentre per un effetto duraturo e profondo prevediamo generalmente un ciclo di 6-8 incontri. Durante la nostra consulenza preliminare gratuita, analizzeremo la tua pelle per calibrare la tecnologia sulla tua sensibilità. È questa attenzione sartoriale che ci distingue qui nel cuore del quartiere: da Estetica Colfelice non usiamo impostazioni standard, ma trattiamo ogni viso e ogni corpo come un'opera unica.</p>
+                </div>
+            </div>
+
+            <div class="treatment-block" id="onda-urto">
+                <div class="treatment-header">
+                    <i class="fas fa-bolt"></i>
+                    <h2>Onda d'Urto</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>Per contrastare gli accumuli adiposi più ostinati e la cellulite fibrosa, l'Onda d'Urto rappresenta la nostra scelta più potente e risolutiva. Queste onde acustiche agiscono direttamente sulla struttura dei tessuti, migliorando la circolazione e restituendo elasticità alla pelle in poche sedute (generalmente tra le 6 e le 10). La nostra consulenza iniziale è il tuo asso nella manica: ci permette di capire esattamente come colpire l'inestetismo e, se necessario, come abbinare questa tecnologia ad altri percorsi per accelerare i tuoi risultati. Venire da Estetica Colfelice significa scegliere una professionalità che non si accontenta di un trattamento base, ma che punta dritto alla soluzione del problema con competenza e tecnologie d'avanguardia.</p>
+                </div>
+            </div>
+
+            <div class="treatment-block" id="pressoterapia">
+                <div class="treatment-header">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <h2>Pressoterapia</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>La pressoterapia è il miglior alleato per chi cerca una sensazione immediata di leggerezza e gambe visibilmente più sgonfie. Favorisce il drenaggio linfatico e aiuta il corpo a eliminare liquidi e tossine in eccesso. Anche se una singola seduta regala un beneficio istantaneo, per un risultato detossinante profondo consigliamo cicli di almeno 10 sedute. In fase di consulenza, studieremo il tuo grado di ritenzione per impostare il programma di pressione perfetto per te. Da noi, la pressoterapia non è un semplice macchinario acceso, ma un rito di benessere che curiamo nei minimi dettagli per farti uscire dal centro con una leggerezza che non provavi da tempo.</p>
+                </div>
+            </div>
+
+            <div class="treatment-block" id="lipolaser">
+                <div class="treatment-header">
+                    <i class="fas fa-fire"></i>
+                    <h2>Lipolaser</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>Il Lipolaser è una tecnologia d'avanguardia progettata per chi desidera ridurre gli accumuli adiposi localizzati in modo indolore e non invasivo. Attraverso l'uso di laser a bassa intensità, questa metodica agisce direttamente sulle cellule adipose, favorendone lo svuotamento naturale e aiutando il corpo a rimodellare i propri volumi. È la soluzione ideale per trattare zone specifiche come addome, fianchi o cosce, regalando una silhouette più definita e una pelle visibilmente più compatta. Da Estetica Colfelice, ogni seduta di Lipolaser è un momento di cura in totale relax: non avvertirai alcun fastidio, ma solo i benefici di un trattamento che lavora per te. Per ottenere un risultato armonioso e duraturo, consigliamo solitamente un percorso personalizzato di circa 8-10 sedute.</p>
+                </div>
+            </div>
+
+            <div class="treatment-block" id="microneedling">
+                <div class="treatment-header">
+                    <i class="fas fa-needle"></i>
+                    <h2>Microneedling</h2>
+                </div>
+                <div class="treatment-body">
+                    <p>Il Microneedling è un trattamento innovativo che spinge la pelle a rigenerarsi da sola, eliminando imperfezioni come macchie, piccoli segni del tempo o cicatrici dell'acne. Attraverso delle micro-stimolazioni quasi impercettibili, il viso torna a splendere, diventando liscio e uniforme. Il ciclo ideale è di circa 3-5 sedute. In Estetica Colfelice la consulenza preliminare è fondamentale: analizziamo la tua pelle per scegliere i prodotti migliori da abbinare al trattamento. La nostra forza è la precisione unita alla massima igiene, per regalarti un viso radioso in totale sicurezza.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prenota il Tuo Trattamento</h2>
+            <p>Contattaci per una consulenza personalizzata gratuita</p>
+            <a href="./#form-section" class="btn-primary">Prenota Ora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Estetica Colfelice. Tutti i diritti riservati. | <a href="./privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+<a href="https://wa.me/393485505465?text=Ciao%20Marianna%2C%20ho%20trovato%20sul%20sito%20il%20tuo%20numero%2C%20volevo%20chiederti%20informazioni" target="_blank" class="contact-float-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="cookie-banner.js"></script>
+</body>
+</html>
